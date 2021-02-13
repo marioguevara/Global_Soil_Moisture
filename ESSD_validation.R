@@ -5,7 +5,7 @@ library(Metrics)
 
 library(scales)
 
-valset <- readRDS('ALL_ismn.rds')
+valset <- readRDS('https://www.hydroshare.org/resource/9f981ae4e68b4f529cdd7a5c9013e27e/data/contents/annual_ismn_data.rds')
 valset[valset$sm<=0,] <- NA
 valset <- na.omit(valset)
 valset[valset$sm>=1,] <- NA
